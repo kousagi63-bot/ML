@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Get in touch with STACKLY — start an ML project, ask a question, or just say hello." />
+  <title>Contact — STACKLY Machine Learning Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/c11.webp" fetchpriority="high" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="theme-stackly" data-page="contact">
+
+  <!--INCLUDE:header-->
+<header class="site-nav" id="siteNav">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Stackly home">
+        <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="nav-cta">Login <i class="bi bi-box-arrow-in-right"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--/INCLUDE:header-->
+
+  <main>
+
+    <!-- ===================== 01 PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="hero-bg">
+        <div class="hero-photo hero-photo--contact"></div>
+        <div class="hero-photo-scrim hero-photo-scrim--strong"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-accents"></div>
+      </div>
+      <div class="container">
+<p class="hero-eyebrow page-hero-eyebrow">Let's Talk</p>
+        <h1 class="page-title">Tell us about your <em>next big model</em></h1>
+        <p class="page-hero-desc">
+          Whether it's a feasibility study or a full production platform, we'd love to hear
+          where you are — <span class="text-accent">and where you're trying to go</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 02 CONTACT ===================== -->
+    <section class="section contact section--light" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div data-reveal-stagger="0.1">
+              <p class="section-eyebrow">Get In Touch</p>
+<h2 class="section-title">Let's build something <em>worth shipping</em></h2>
+              <p class="section-text">
+                Fill out the form and we'll get back to you within one business day.
+                Prefer email or a no-pressure call? We're all ears either way.
+              </p>
+            </div>
+            <ul class="contact-list" data-reveal-stagger="0.08">
+              <li>
+                <a href="mailto:hello@stackly.ai">
+                  <i class="bi bi-envelope"></i>
+                  <span>hello@stackly.ai</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+12125550137">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (212) 555-0137</span>
+                </a>
+              </li>
+              <li>
+                <span>
+                  <i class="bi bi-geo-alt"></i>
+                  <span>88 Mercer Street, New York, NY</span>
+                </span>
+              </li>
+            </ul>
+            <div class="contact-social" data-reveal-stagger="0.07">
+              <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="404.html" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="row g-4" data-reveal-stagger="0.09">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactName">Your Name</label>
+                  <input class="form-control" type="text" id="contactName" name="contactName" data-name-field placeholder="Jane Smith" autocomplete="name" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="contactNameMsg" required />
+                  <p class="field-msg" id="contactNameMsg" role="alert">
+                    <i class="bi bi-exclamation-circle"></i><span></span>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactEmail">Email Address</label>
+                  <input class="form-control" type="email" id="contactEmail" name="contactEmail" placeholder="jane@company.com" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" required />
+                  <p class="field-msg" role="alert">
+                    <i class="bi bi-exclamation-circle"></i><span></span>
+                  </p>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="contactSubject">What Do You Need?</label>
+<select class="form-select" id="contactSubject" name="contactSubject">
+                    <option selected>Project Inquiry</option>
+                    <option>Model Development</option>
+                    <option>MLOps &amp; Deployment</option>
+                    <option>Data Engineering</option>
+                    <option>Generative AI &amp; LLMs</option>
+                    <option>Computer Vision</option>
+                    <option>AI Strategy &amp; Consulting</option>
+                    <option>Something Else</option>
+                  </select>
+                </div>
+                <div class="col-12">
+<label class="form-label" for="contactMessage">Project Details</label>
+                  <textarea class="form-control" id="contactMessage" name="contactMessage" rows="5" placeholder="Tell us about your data, goals, and timeline…" aria-describedby="contactMessageMsg" required></textarea>
+                  <p class="field-msg" id="contactMessageMsg" role="alert">
+                    <i class="bi bi-exclamation-circle"></i><span></span>
+                  </p>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-solid btn-solid--accent">Send Message <i class="bi bi-arrow-up-right"></i></button>
+                  <div id="formSuccess" class="form-success d-none"><p><i class="bi bi-check2-circle"></i> Thanks! Your message has been sent — we'll be in touch within one business day.</p></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 WHAT HAPPENS NEXT ===================== -->
+    <section class="section process" id="next">
+      <div class="container">
+        <div class="section-head" data-reveal-stagger="0.1">
+<p class="section-eyebrow">What Happens Next</p>
+          <h2 class="section-title">From hello to <em>production</em></h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <span class="process-num">01</span>
+            <h3>Discovery Call</h3>
+            <p>30 minutes to understand your data, goals, timeline, and what success looks like.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">02</span>
+            <h3>Proposal</h3>
+            <p>A fixed quote and clear scope — no vague estimates, no hidden costs.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">03</span>
+            <h3>Kickoff</h3>
+            <p>We bring your data and our platform into one room and set the roadmap together.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">04</span>
+            <h3>Train &amp; Iterate</h3>
+            <p>Weekly sprints with honest feedback loops — you always see the experiments.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">05</span>
+            <h3>Deploy &amp; Monitor</h3>
+            <p>We ship to production, then track and retrain so performance never decays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 MAP ===================== -->
+    <section class="section section--light map" id="map">
+      <div class="container" data-reveal-stagger="0.12">
+<div class="map-note">
+          <p class="section-eyebrow">Find Us</p>
+          <h2 class="section-title">Based in the <em>heart of Soho</em></h2>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="STACKLY New York office location"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0110%2C40.7175%2C-73.9900%2C40.7275&layer=mapnik&marker=40.7225%2C-74.0005"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 REACH US ===================== -->
+    <section class="section" id="reach">
+      <div class="container">
+        <div class="section-head" data-reveal-stagger="0.1">
+          <p class="section-eyebrow">Reach Us</p>
+          <h2 class="section-title">Every way to get <em>in touch</em></h2>
+        </div>
+        <div class="row g-4" data-reveal-stagger="0.09">
+          <div class="col-md-6 col-lg-3">
+<a class="reach-card" href="mailto:hello@stackly.ai">
+              <span class="reach-icon"><i class="bi bi-envelope"></i></span>
+              <span class="reach-value">hello@stackly.ai</span>
+              <span class="reach-label">Email</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a class="reach-card" href="tel:+12125550137">
+              <span class="reach-icon"><i class="bi bi-telephone"></i></span>
+              <span class="reach-value">+1 (212) 555-0137</span>
+              <span class="reach-label">Phone</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a class="reach-card" href="https://maps.google.com/?q=88+Mercer+Street+New+York,+NY" target="_blank" rel="noopener">
+              <span class="reach-icon"><i class="bi bi-geo-alt"></i></span>
+              <span class="reach-value">88 Mercer Street</span>
+              <span class="reach-label">New York Studio</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <span class="reach-card">
+              <span class="reach-icon"><i class="bi bi-alarm"></i></span>
+              <span class="reach-value">Mon–Fri, 9–18 ET</span>
+              <span class="reach-label">Office Hours</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 06 FAQ ===================== -->
+    <section class="section section--light" id="faq">
+      <div class="container">
+        <div class="section-head" data-reveal-stagger="0.1">
+          <p class="section-eyebrow">Good To Know</p>
+          <h2 class="section-title">Quick <em>questions</em></h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion faq-accordion" id="contactFaq" data-reveal-stagger="0.08">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cfOne" aria-expanded="true" aria-controls="cfOne">
+                    How quickly will you reply?
+                  </button>
+                </h3>
+                <div id="cfOne" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
+                  <div class="accordion-body">
+                    Within one business day, always. If your project is urgent, call us — the phone is answered by a human, not a menu.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfTwo" aria-expanded="false" aria-controls="cfTwo">
+                    Do you work with early-stage startups?
+                  </button>
+                </h3>
+                <div id="cfTwo" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                  <div class="accordion-body">
+                    Yes. Around a third of our clients are startups, and our project-based model is designed to fit earlier budgets with no lock-in.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfThree" aria-expanded="false" aria-controls="cfThree">
+                    Can you sign an NDA?
+                  </button>
+                </h3>
+                <div id="cfThree" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                  <div class="accordion-body">
+                    Of course. Share your NDA ahead of the call or we'll send you our standard mutual one — signed before we discuss anything sensitive.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfFour" aria-expanded="false" aria-controls="cfFour">
+                    Do you take on smaller models or feasibility studies?
+                  </button>
+                </h3>
+                <div id="cfFour" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                  <div class="accordion-body">
+                    Yes — through mini engagements and our monthly retainer. Tell us the scope and we'll recommend the smallest sensible option.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfFive" aria-expanded="false" aria-controls="cfFive">
+                    What happens after I send the form?
+                  </button>
+                </h3>
+                <div id="cfFive" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                  <div class="accordion-body">
+                    You'll hear from us within one business day to book a 30-minute discovery call. From there, the steps are: proposal, data access, train, and deploy.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 07 FAREWELL QUOTE ===================== -->
+    <section class="section" id="farewell">
+      <div class="container">
+        <div class="quote-inner" data-reveal>
+<p class="quote-large">
+            "Great models happen when data meets ambition. Let's find out what
+            that looks like for <em>your</em> team."
+          </p>
+          <p class="quote-author">The STACKLY Team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 08 CTA ===================== -->
+    <section class="section cta" id="cta">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+<p class="section-eyebrow">Prefer Email?</p>
+          <h2 class="cta-title">Reach us directly at <em>hello@stackly.ai</em></h2>
+          <p class="cta-desc">Tell us about your data and goals and we'll build the ML system to get you there.</p>
+          <a href="404.html" class="btn-solid btn-solid--accent">Send an Email <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!--INCLUDE:newsletter-->
+<!-- ===================== NEWSLETTER ===================== -->
+<section class="section section--light newsletter" id="newsletter">
+  <div class="container">
+    <div class="newsletter-inner" data-reveal>
+      <span class="newsletter-ghost" aria-hidden="true">Subscribe</span>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="section-eyebrow">The Model Report</p>
+          <h2 class="newsletter-title">Stay Sharp. <em>Stay Ahead.</em></h2>
+          <p class="newsletter-text">
+            One considered email a month on the models, pipelines, and systems behind
+            production AI. No noise, no recycled threads &mdash; just the things worth your attention.
+          </p>
+          <ul class="newsletter-points">
+            <li><i class="bi bi-stars"></i> Machine learning engineering, unpacked</li>
+            <li><i class="bi bi-clock-history"></i> Roughly four minutes, once a month</li>
+            <li><i class="bi bi-shield-check"></i> Unsubscribe in a single click</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="newsletter-card">
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <label class="newsletter-label" for="nlEmail">Email address</label>
+              <input
+                class="form-control newsletter-input"
+                type="email"
+                id="nlEmail"
+                name="nlEmail"
+                placeholder="you@company.com"
+                autocomplete="email"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+                required
+              />
+              <p class="field-msg" role="alert">
+                <i class="bi bi-exclamation-circle"></i><span></span>
+              </p>
+              <button type="submit" class="btn-solid btn-solid--accent newsletter-btn">
+                Subscribe <i class="bi bi-arrow-right"></i>
+              </button>
+            </form>
+            <p class="newsletter-note d-none" id="newsletterNote">
+              <i class="bi bi-check2-circle"></i> Thanks for subscribing &mdash; see you in your inbox.
+            </p>
+            <p class="newsletter-privacy">We only send the monthly dispatch. Nothing else, ever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/INCLUDE:newsletter-->
+
+  <!--INCLUDE:footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="brand brand-footer" href="index.html" aria-label="Stackly home">
+          <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+        </a>
+        <p class="footer-desc">
+          A machine learning platform for teams that build, deploy, and scale
+          production AI — data, models, and MLOps in one place.
+        </p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="404.html" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="404.html" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Solutions</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Model Development</a></li>
+          <li><a href="404.html">MLOps &amp; Deployment</a></li>
+          <li><a href="404.html">Data Engineering</a></li>
+          <li><a href="404.html">Generative AI</a></li>
+          <li><a href="404.html">AI Strategy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Documentation</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="404.html">Careers</a></li>
+          <li><a href="404.html">Changelog</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="footer-links">
+          <li><a href="404.html"><i class="bi bi-envelope"></i>hello@stackly.ai</a></li>
+          <li><a href="404.html"><i class="bi bi-telephone"></i>+1 (212) 555-0137</a></li>
+          <li><a href="404.html"><i class="bi bi-geo-alt"></i>88 Mercer Street, New York</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY, Inc. All rights reserved.</p>
+      <p>Built for production ML in New York</p>
+    </div>
+  </div>
+</footer>
+<!--/INCLUDE:footer-->
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/email-validate.js"></script>
+    <script src="js/name-validate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

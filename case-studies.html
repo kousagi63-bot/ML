@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Machine learning case studies by STACKLY — model development, MLOps, and the concrete business results behind our favorite deployments." />
+  <title>Case Studies — STACKLY Machine Learning Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/c10.webp" fetchpriority="high" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="theme-stackly" data-page="case-studies">
+
+  <!--INCLUDE:header-->
+<header class="site-nav" id="siteNav">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Stackly home">
+        <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="nav-cta">Login <i class="bi bi-box-arrow-in-right"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--/INCLUDE:header-->
+
+  <main>
+
+    <!-- ===================== 01 PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="hero-bg">
+        <div class="hero-photo hero-photo--case"></div>
+        <div class="hero-photo-scrim"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-accents"></div>
+      </div>
+      <div class="container">
+        <p class="hero-eyebrow page-hero-eyebrow">Results, Documented</p>
+        <h1 class="page-title">Case studies that <em>show the work</em></h1>
+        <p class="page-hero-desc">
+          Deep dives into how data engineering, modeling, and MLOps come together —
+          with the challenges we met, the <span class="text-accent">models we shipped</span>, and the results that followed.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 02 CASE STUDY — NORTHLIGHT ===================== -->
+    <section class="section case-study section--light" id="northlight">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>Case Study 01 · Forecasting + MLOps</p>
+        <h2 class="section-title" data-reveal>Northlight Capital — models that <em>rebuilt trust</em></h2>
+        <div class="case-hero" data-reveal>
+          <video
+            data-src="v2.mp4"
+            poster="images/case-studies/northlight-capital.webp"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            disablepictureinpicture
+            aria-label="Northlight Capital forecasting platform showcase video"></video>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6" data-reveal>
+            <div class="result-card">
+              <h3>The Challenge</h3>
+              <p>
+                Northlight had grown through acquisition, and its data showed it —
+                a patchwork of spreadsheets, siloed systems, and guess-driven forecasts.
+                Analysts loved the domain; the infrastructure kept getting in the way.
+                We were asked to unify the data story and ship a production forecasting
+                platform in one quarter.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-reveal>
+            <div class="result-card">
+              <h3>The Approach</h3>
+              <p>
+                We rebuilt Northlight around a single promise — "Clarity for complex
+                capital." A unified feature store, MLOps pipelines, and a monitoring
+                stack feeding a forecasting model that analysts could trace back to
+                the raw data behind every number.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" data-reveal>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">+64%</span>
+              <p>Forecast accuracy within six months</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">2.4x</span>
+              <p>Faster model delivery to production</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">-42%</span>
+              <p>Inference cost on retrained models</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 CASE STUDY — MONO COFFEE ===================== -->
+    <section class="section case-study" id="mono">
+      <div class="container">
+        <p class="section-eyebrow" data-reveal>Case Study 02 · Forecasting + Data</p>
+        <h2 class="section-title" data-reveal>Mono Coffee Co. — demand forecasting for a <em>craft brand</em></h2>
+        <div class="case-hero" data-reveal>
+          <video
+            data-src="v3.mp4"
+            poster="images/case-studies/mono-coffee-hero.webp"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            disablepictureinpicture
+            aria-label="Mono Coffee Co. demand forecasting model showcase video"></video>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6" data-reveal>
+            <div class="result-card">
+              <h3>The Challenge</h3>
+              <p>
+                A single-origin roaster with beautiful beans and spreadsheet forecasts —
+                constantly out of stock on bestsellers and over-rotating slow movers.
+                Mono needed demand planning that felt as considered as its roasting,
+                without the guesswork.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-reveal>
+            <div class="result-card">
+              <h3>The Approach</h3>
+              <p>
+                We trained a forecasting model on POS, subscription, and promotional
+                data: an ensemble that predicts daily demand at SKU level, balances
+                stock and batch freshness, and feeds ordering recommendations back
+                into their workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" data-reveal>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">3x</span>
+              <p>Faster restock decisions versus prior process</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">+87%</span>
+              <p>DTC subscription growth in a year</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="result-card">
+              <span class="result-num">19</span>
+              <p>Retail doors added after relaunch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 STATS ===================== -->
+    <section class="section stats section--light" id="stats">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow" data-reveal>The Proof</p>
+          <h2 class="section-title" data-reveal>Results across the <em>board</em></h2>
+        </div>
+        <div class="row g-4" data-reveal>
+          <div class="col-6 col-md-3">
+            <div class="result-card">
+              <span class="result-num" data-count="45">45+</span>
+              <p>Enterprise teams</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="result-card">
+              <span class="result-num" data-count="3.2">3.2x</span>
+              <p>Average ROI on engagements</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="result-card">
+              <span class="result-num" data-count="87">87%</span>
+              <p>Avg. deployment success</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="result-card">
+              <span class="result-num" data-count="24">24</span>
+              <p>Industry awards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 BIG QUOTE ===================== -->
+    <section class="section" id="quote">
+      <div class="container">
+        <div class="quote-inner" data-reveal>
+          <p class="quote-large">
+            "Within two quarters, the platform paid for itself. More importantly,
+            the models finally lived up to the ambition of the business."
+          </p>
+          <p class="quote-author">Stewart Hale — Managing Partner, Northlight Capital</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 06 PROCESS ===================== -->
+    <section class="section process section--light" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow" data-reveal>Our Process</p>
+          <h2 class="section-title" data-reveal>How results get <em>made</em></h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <span class="process-num">01</span>
+            <h3>Discover</h3>
+            <p>We dig into your data, use cases, and constraints to find the highest-impact ML opportunity.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">02</span>
+            <h3>Prototype</h3>
+            <p>Rapid experiments validate feasibility and baseline performance before larger investment.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">03</span>
+            <h3>Train</h3>
+            <p>Modeling and tuning against metrics that map directly to business outcomes.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">04</span>
+            <h3>Deploy</h3>
+            <p>We ship to production with CI/CD, monitoring, and scalable, cost-efficient inference.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-num">05</span>
+            <h3>Monitor</h3>
+            <p>We track drift, retrain, and improve models so performance never decays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 07 CLIENTS ===================== -->
+    <section class="clients" id="clients">
+      <div class="container">
+        <p class="clients-label" data-reveal>Clients that scale with us</p>
+        <div class="marquee marquee--reverse" aria-hidden="true">
+          <div class="marquee-track">
+            <span class="client-logo">CAPSTONE</span>
+            <span class="client-logo">MERIDIAN</span>
+            <span class="client-logo">BASALT</span>
+            <span class="client-logo">IVORY</span>
+            <span class="client-logo">STERLING</span>
+            <span class="client-logo">COMMON</span>
+            <span class="client-logo">BROOK</span>
+            <span class="client-logo">CREST</span>
+            <span class="client-logo">CAPSTONE</span>
+            <span class="client-logo">MERIDIAN</span>
+            <span class="client-logo">BASALT</span>
+            <span class="client-logo">IVORY</span>
+            <span class="client-logo">STERLING</span>
+            <span class="client-logo">COMMON</span>
+            <span class="client-logo">BROOK</span>
+            <span class="client-logo">CREST</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 08 INSIGHTS ===================== -->
+    <section class="section insights section--light" id="insights">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="section-eyebrow" data-reveal>Insights</p>
+            <h2 class="section-title" data-reveal>From the <em>journal</em></h2>
+          </div>
+          <a href="404.html" class="btn-solid btn-solid--outline section-head-btn" data-reveal>All Articles <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-4.webp" alt="Model performance measurement article" loading="lazy" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">MLOps</span><span>Jun 2026</span></div>
+                <h3>How We Measure Model Performance</h3>
+                <p>Beyond accuracy — the metrics that actually tell you whether a model is paying for itself.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-1.webp" alt="Data to production retrospective article" loading="lazy" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">Data</span><span>May 2026</span></div>
+                <h3>Data to Production: A Retrospective</h3>
+                <p>What actually happened inside one of our fastest model-to-production deliveries.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-5.webp" alt="Feature platform article" loading="lazy" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">Platforms</span><span>Apr 2026</span></div>
+                <h3>The Reusable Feature Platform</h3>
+                <p>Why the best ML systems are shipped as platforms — not one-off models.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 09 CTA ===================== -->
+    <section class="section cta" id="cta">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <p class="section-eyebrow">Let's Build Together</p>
+          <h2 class="cta-title">Want results like these in <em>production?</em></h2>
+          <p class="cta-desc">Tell us about your data and goals and we'll build the ML system to get you there.</p>
+          <a href="404.html" class="btn-solid btn-solid--accent">Start Your Project <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!--INCLUDE:footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="brand brand-footer" href="index.html" aria-label="Stackly home">
+          <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+        </a>
+        <p class="footer-desc">
+          A machine learning platform for teams that build, deploy, and scale
+          production AI — data, models, and MLOps in one place.
+        </p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="404.html" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="404.html" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Solutions</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Model Development</a></li>
+          <li><a href="404.html">MLOps &amp; Deployment</a></li>
+          <li><a href="404.html">Data Engineering</a></li>
+          <li><a href="404.html">Generative AI</a></li>
+          <li><a href="404.html">AI Strategy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Documentation</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="404.html">Careers</a></li>
+          <li><a href="404.html">Changelog</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="footer-links">
+          <li><a href="404.html"><i class="bi bi-envelope"></i>hello@stackly.ai</a></li>
+          <li><a href="404.html"><i class="bi bi-telephone"></i>+1 (212) 555-0137</a></li>
+          <li><a href="404.html"><i class="bi bi-geo-alt"></i>88 Mercer Street, New York</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY, Inc. All rights reserved.</p>
+      <p>Built for production ML in New York</p>
+    </div>
+  </div>
+</footer>
+<!--/INCLUDE:footer-->
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected deployments by STACKLY — MLOps, forecasting, NLP, and computer vision systems for teams that perform." />
+  <title>Work — STACKLY Machine Learning Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/c9.webp" fetchpriority="high" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="theme-stackly" data-page="work">
+
+  <!--INCLUDE:header-->
+<header class="site-nav" id="siteNav">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Stackly home">
+        <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="nav-cta">Login <i class="bi bi-box-arrow-in-right"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--/INCLUDE:header-->
+
+  <main>
+
+    <!-- ===================== 01 PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="hero-bg">
+        <div class="hero-photo hero-photo--work"></div>
+        <div class="hero-photo-scrim"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-accents"></div>
+      </div>
+      <div class="container">
+        <p class="hero-eyebrow page-hero-eyebrow">Selected Work</p>
+        <h1 class="page-title">Systems that <em>perform</em></h1>
+        <p class="page-hero-desc">
+          A selection of MLOps platforms, forecasting models, LLM apps, and vision systems
+          we've shipped for teams that wanted more than demos — <span class="text-accent">they wanted results</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 02 WORK GRID ===================== -->
+    <section class="section work section--light" id="work">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap justify-content-between align-items-end">
+          <div>
+            <p class="section-eyebrow" data-reveal>Our Portfolio</p>
+            <h2 class="section-title" data-reveal>Browse by <em>category</em></h2>
+          </div>
+          <ul class="work-filters" data-reveal>
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="mlops">MLOps</li>
+            <li data-filter="forecasting">Forecasting</li>
+            <li data-filter="nlp">NLP</li>
+            <li data-filter="vision">Vision</li>
+          </ul>
+        </div>
+
+        <!-- 12 cards in a single row so the grid flows continuously:
+             3 per row x 4 rows. Each card is tagged with its category so
+             the chips above can filter to 4 without regrouping. -->
+        <div class="row g-4 work-grid">
+          <div class="col-md-6 col-lg-4" data-category="mlops" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s1.webp" alt="MLOps deployment 01" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">MLOps</span>
+                  <a href="404.html" class="work-expand" aria-label="View FraudShield MLOps platform"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>FraudShield</h3>
+                  <span>Real-time streaming pipeline</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="mlops" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s2.webp" alt="MLOps deployment 02" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">MLOps</span>
+                  <a href="404.html" class="work-expand" aria-label="View Orbit model serving platform"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Orbit Serving</h3>
+                  <span>Scalable model serving</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="mlops" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s3.webp" alt="MLOps deployment 03" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">MLOps</span>
+                  <a href="404.html" class="work-expand" aria-label="View Apex edge inference system"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Apex Inference</h3>
+                  <span>Edge deployment + monitoring</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="forecasting" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s4.webp" alt="Forecasting deployment 01" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Forecasting</span>
+                  <a href="404.html" class="work-expand" aria-label="View Atlas demand forecasting model"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Atlas Demand</h3>
+                  <span>Demand forecasting + data</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="forecasting" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s5.webp" alt="Forecasting deployment 02" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Forecasting</span>
+                  <a href="404.html" class="work-expand" aria-label="View Arlo churn prediction model"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Arlo Churn</h3>
+                  <span>Churn classification + retention</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="forecasting" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s6.webp" alt="Forecasting deployment 03" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Forecasting</span>
+                  <a href="404.html" class="work-expand" aria-label="View Pulse recommendation engine"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Pulse Recs</h3>
+                  <span>Recommendation engine + personalization</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="nlp" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s7.webp" alt="NLP deployment 01" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">NLP</span>
+                  <a href="404.html" class="work-expand" aria-label="View Nova copilot LLM application"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Nova Copilot</h3>
+                  <span>LLM copilot + RAG</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="nlp" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s8.webp" alt="NLP deployment 02" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">NLP</span>
+                  <a href="404.html" class="work-expand" aria-label="View Meridian semantic search"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Meridian Search</h3>
+                  <span>Semantic search + embedding</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="nlp" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s9.webp" alt="NLP deployment 03" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">NLP</span>
+                  <a href="404.html" class="work-expand" aria-label="View Vox support classification model"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Vox Support</h3>
+                  <span>Support classification + routing</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="vision" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s10.webp" alt="Vision deployment 01" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Vision</span>
+                  <a href="404.html" class="work-expand" aria-label="View Vivid Health imaging model"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Vivid Health</h3>
+                  <span>Medical imaging + diagnostics</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="vision" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s11.webp" alt="Vision deployment 02" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Vision</span>
+                  <a href="404.html" class="work-expand" aria-label="View InspectHQ defect detection model"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>InspectHQ</h3>
+                  <span>Defect detection + automation</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-category="vision" data-reveal>
+            <article class="work-card">
+              <div class="work-media">
+                <img src="images/s12.webp" alt="Vision deployment 03" class="img-fluid" loading="lazy" decoding="async" />
+                <div class="work-overlay">
+                  <span class="work-tag">Vision</span>
+                  <a href="404.html" class="work-expand" aria-label="View Aura optical inspection system"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="work-info">
+                  <h3>Aura Optical</h3>
+                  <span>Optical inspection + quality</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-cta text-center" data-reveal>
+          <a href="404.html" class="btn-solid btn-solid--outline">View More Deployments <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 CLIENTS ===================== -->
+    <section class="clients" id="clients">
+      <div class="container">
+        <p class="clients-label" data-reveal>Trusted by enterprise teams worldwide</p>
+        <div class="marquee marquee--reverse" aria-hidden="true">
+          <div class="marquee-track">
+            <span class="client-logo">ELEMENT</span>
+            <span class="client-logo">VERVE</span>
+            <span class="client-logo">OAKWORK</span>
+            <span class="client-logo">MARQ</span>
+            <span class="client-logo">FIELD</span>
+            <span class="client-logo">NOBLE</span>
+            <span class="client-logo">CLARK</span>
+            <span class="client-logo">SYMBOL</span>
+            <span class="client-logo">ELEMENT</span>
+            <span class="client-logo">VERVE</span>
+            <span class="client-logo">OAKWORK</span>
+            <span class="client-logo">MARQ</span>
+            <span class="client-logo">FIELD</span>
+            <span class="client-logo">NOBLE</span>
+            <span class="client-logo">CLARK</span>
+            <span class="client-logo">SYMBOL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 AWARDS ===================== -->
+    <section class="section section--light" id="awards">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow" data-reveal>Recognition</p>
+          <h2 class="section-title" data-reveal>Recognition that <em>follows</em> the models</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="award-card" data-year="2026">
+              <span class="award-tag">MLOps</span>
+              <h3>Best MLOps Platform</h3>
+              <p>AI Summit Awards · STACKLY Platform</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="award-card" data-year="2025">
+              <span class="award-tag">Forecasting</span>
+              <h3>Best Applied AI</h3>
+              <p>AI Excellence Awards · Atlas Demand</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="award-card" data-year="2025">
+              <span class="award-tag">NLP</span>
+              <h3>Best Industry LLM</h3>
+              <p>Enterprise AI Awards · Nova Copilot</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 DISCIPLINES ===================== -->
+    <section class="section" id="disciplines">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow" data-reveal>Approach</p>
+          <h2 class="section-title" data-reveal>Capabilities we <em>execute</em> by</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-reveal>
+            <div class="discipline-item">
+              <i class="bi bi-cpu discipline-icon"></i>
+              <span class="discipline-count">120+</span>
+              <span class="discipline-name">Models trained</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-reveal>
+            <div class="discipline-item">
+              <i class="bi bi-diagram-3 discipline-icon"></i>
+              <span class="discipline-count">38</span>
+              <span class="discipline-name">Pipelines shipped</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-reveal>
+            <div class="discipline-item">
+              <i class="bi bi-chat discipline-icon"></i>
+              <span class="discipline-count">60+</span>
+              <span class="discipline-name">NLP systems</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-reveal>
+            <div class="discipline-item">
+              <i class="bi bi-eye discipline-icon"></i>
+              <span class="discipline-count">18</span>
+              <span class="discipline-name">Vision deployments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 06 INSIGHTS ===================== -->
+    <section class="section insights section--light" id="insights">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="section-eyebrow" data-reveal>Insights</p>
+            <h2 class="section-title" data-reveal>From the <em>journal</em></h2>
+          </div>
+          <a href="404.html" class="btn-solid btn-solid--outline section-head-btn" data-reveal>All Articles <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-1.webp" alt="Model delivery timeline article" loading="lazy" decoding="async" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">MLOps</span><span>May 2026</span></div>
+                <h3>How Long Should a Model Really Take to Ship?</h3>
+                <p>A realistic timeline for data, training, and deployment — and where most teams lose the plot.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-2.webp" alt="Feature store anatomy article" loading="lazy" decoding="async" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">Data</span><span>Apr 2026</span></div>
+                <h3>The Anatomy of a High-Performing Feature Store</h3>
+                <p>Structure, freshness, and lineage — the elements that quietly lift model quality.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-reveal>
+            <article class="post-card">
+              <div class="post-media">
+                <img src="images/blog/insight-5.webp" alt="RAG architecture article" loading="lazy" decoding="async" />
+              </div>
+              <div class="post-body">
+                <div class="post-meta"><span class="post-cat">Generative AI</span><span>Mar 2026</span></div>
+                <h3>Why RAG Beats Fine-Tuning for Enterprise LLMs</h3>
+                <p>Grounding is everything. Here's how to choose the right architecture for your data.</p>
+                <a href="404.html" class="post-link">Read Article <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 07 CTA ===================== -->
+    <section class="section cta" id="cta">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <p class="section-eyebrow">Let's Build Together</p>
+          <h2 class="cta-title">Want models like these in <em>production?</em></h2>
+          <p class="cta-desc">Tell us about your data and goals and we'll build the ML system to get you there.</p>
+          <a href="404.html" class="btn-solid btn-solid--accent">Start Your Project <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!--INCLUDE:footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="brand brand-footer" href="index.html" aria-label="Stackly home">
+          <img src="images/logo-yellow.webp" alt="Stackly" class="brand-logo" />
+        </a>
+        <p class="footer-desc">
+          A machine learning platform for teams that build, deploy, and scale
+          production AI — data, models, and MLOps in one place.
+        </p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="404.html" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="404.html" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Solutions</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Model Development</a></li>
+          <li><a href="404.html">MLOps &amp; Deployment</a></li>
+          <li><a href="404.html">Data Engineering</a></li>
+          <li><a href="404.html">Generative AI</a></li>
+          <li><a href="404.html">AI Strategy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Documentation</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="404.html">Careers</a></li>
+          <li><a href="404.html">Changelog</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="footer-links">
+          <li><a href="404.html"><i class="bi bi-envelope"></i>hello@stackly.ai</a></li>
+          <li><a href="404.html"><i class="bi bi-telephone"></i>+1 (212) 555-0137</a></li>
+          <li><a href="404.html"><i class="bi bi-geo-alt"></i>88 Mercer Street, New York</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STACKLY, Inc. All rights reserved.</p>
+      <p>Built for production ML in New York</p>
+    </div>
+  </div>
+</footer>
+<!--/INCLUDE:footer-->
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
